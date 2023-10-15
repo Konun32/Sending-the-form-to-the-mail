@@ -40,18 +40,19 @@
 										<textarea name="message" id="formMessage" class="form__input"></textarea>
 									</div>
 									<div class="form__item">
-										<div class="form__label">Возраст:</div>
+										<div class="form__label">Время года:</div>
 										<select name="age" class="form__select select">
-											<option value="от 18 до 25" selected>Молодой</option>
-											<option value="от 25 до 45">Старый</option>
-											<option value="от 45">Супер стар</option>
+											<option value="Зима" selected>Зима</option>
+											<option value="Весна">Весна</option>
+											<option value="Лето">Лето</option>
+											<option value="Осень">Осень</option>
 										</select>
 									</div>
 									<div class="form__item">
 										<div class="form__label">Прикрепить фото</div>
 										<div class="file">
 											<div class="file__item">
-												<input type="file" id="formImage" accept=".jpg, .png, .gif" name="image" class="file__input">
+												<input type="file" id="formImage" accept=".jpg, .png, .gif" name="image" class="file__input file__input_img">
 												<div class="file__button">Выбрать</div>
 											</div>
 											<div id="formPreview" class="file__preview"></div>
@@ -73,7 +74,7 @@
 
 			<!--@@include('blocks/footer.html')-->
 		</div>
-		
+		<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>
